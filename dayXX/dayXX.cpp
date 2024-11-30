@@ -10,7 +10,7 @@ int part1(std::istream &in)
     {
         // do something with line
     }
-    return 0;
+    return -1;
 }
 
 int part2(std::istream &in)
@@ -21,7 +21,5 @@ int part2(std::istream &in)
     {
         // do something with line
     }
-    return 0;
+    return -1;
 }
-
-

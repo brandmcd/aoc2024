@@ -50,6 +50,8 @@
         "ostream": "cpp",
         "sstream": "cpp",
         "typeinfo": "cpp",
-        "fstream": "cpp"
+        "fstream": "cpp",
+        "unordered_set": "cpp",
+        "chrono": "cpp"
     }
 }

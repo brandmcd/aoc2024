@@ -4,6 +4,8 @@
 #include <iostream>
 #include <istream>
 #include <fstream>
+#include <string>
+#include <vector>
 
 int part1(std::istream& in);
 

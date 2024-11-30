@@ -34,4 +34,11 @@ TEST(part2)
         cout << e.what();
     }
 }
+
+TEST(example)
+{
+    istringstream in("");
+    ASSERT_EQUAL(part1(in), 0);
+    //ASSERT_EQUAL(part2(in), 0);
+}
 TEST_MAIN();

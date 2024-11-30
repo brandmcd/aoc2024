@@ -9,6 +9,8 @@ To create a new day, run these commands (replace `00` with the day number):
 
 ```bash
 cd ~/AOC/aoc2024
-cp -r dayXX day00
-find day00 -type f -exec sed -i 's/dayXX/day00/g' {} +; find day00 -depth -name '*dayXX*' -exec bash -c 'mv "$0" "${0//dayXX/day00}"' {} \;
-cd day00
+./create_day.sh 00
+```
+
+if you get error `./create_day.sh: Permission denied`
+`chmod +x create_day.sh`

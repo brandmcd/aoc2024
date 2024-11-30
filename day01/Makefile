@@ -8,14 +8,14 @@ CXX ?= g++
 CXXFLAGS ?= --std=c++17 -Wall -Werror -pedantic -g -Wno-sign-compare -Wno-comment
 
 # Targets
-day00_tests.exe: day00.cpp day00_tests.cpp
+day01_tests.exe: day01.cpp day01_tests.cpp
 	$(CXX) $(CXXFLAGS) $^ -o $@
 
 # Default target
 .PHONY: all
-all: day00_tests.exe
+all: day01_tests.exe
 	@echo "Running tests..."
-	./day00_tests.exe
+	./day01_tests.exe
 
 # Clean target
 .PHONY: clean
