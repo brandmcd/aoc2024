@@ -12,5 +12,6 @@ cd ~/AOC/aoc2024
 ./create_day.sh 00
 ```
 
-if you get error `./create_day.sh: Permission denied`
-`chmod +x create_day.sh`
+if you get error `./create_day.sh: Permission denied` 
+
+run `chmod +x create_day.sh`
