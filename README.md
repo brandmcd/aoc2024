@@ -12,4 +12,3 @@ cd ~/AOC/aoc2024
 cp -r dayXX day00
 find day00 -type f -exec sed -i 's/dayXX/day00/g' {} +; find day00 -depth -name '*dayXX*' -exec bash -c 'mv "$0" "${0//dayXX/day00}"' {} \;
 cd day00
-```# aoc2024
