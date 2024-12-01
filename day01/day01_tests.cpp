@@ -1,6 +1,7 @@
 #include "day01.hpp"
 #include "unit_test_framework.hpp"
 #include <iostream>
+#include <chrono>
 
 using namespace std;
 
@@ -18,6 +19,7 @@ TEST(part1)
     {
         cout << e.what();
     }
+
 }
 
 TEST(part2)
