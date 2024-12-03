@@ -4,60 +4,6 @@
 
 using namespace std;
 
-int part1(std::istream &in)
-{
-    // parse input
-    string line;
-    vector<vector<int>> levels;
-    int safe = 0;
-    while (std::getline(in, line)) {
-        vector<int> level;
-        istringstream lineStream(line);
-        int i = -1;
-        while (lineStream >> i) {
-            level.push_back(i);
-        }
-        levels.push_back(level);
-    }
-    //get all levels that are strictly increasing
-    for (int i = 0; i < levels.size(); i++) {
-        bool isSafe = true;
-        //check if Any two adjacent levels differ by at least one and at most three.
-         for (int j = 0; j < levels[i].size() - 1; j++) {
-            int diff = abs(levels[i][j] - levels[i][j + 1]);
-            if (diff < 1 || diff > 3) {
-                isSafe = false;
-                break;
-            }
-        }
-        if (isSafe) {
-        //check if strictly increasing
-        for (int j = 0; j < levels[i].size() - 1; j++) {
-            if (levels[i][j] >= levels[i][j + 1]) {
-                isSafe = false;
-                break;
-            }
-        }
-
-        if (!isSafe) {
-            isSafe = true;
-           //check if strictly decreasing
-            for (int j = 0; j < levels[i].size() - 1; j++) {
-                if (levels[i][j] <= levels[i][j + 1]) {
-                    isSafe = false;
-                    break;
-                }
-            }
-        }
-        }
-        
-        if (isSafe) {
-            safe++;
-        }
-    }
-    return safe;
-}
-
 bool isSafe(vector<int> &level)
 {
      bool isSafe = true;
@@ -122,7 +68,24 @@ int part2(std::istream &in)
     return safe;
 }
 
-
+int part1(std::istream &in)
+{
+    // parse input
+    string line;
+    int safe = 0;
+    while (std::getline(in, line)) {
+        vector<int> level;
+        istringstream lineStream(line);
+        int i = -1;
+        while (lineStream >> i) {
+            level.push_back(i);
+        }
+        if(isSafe(level)) {
+            safe++;
+        }
+    }
+    return safe;
+}
 
 /*
 int part2(std::istream &in)
