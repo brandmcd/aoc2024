@@ -27,7 +27,7 @@ TEST(part2)
         ifstream file("input.txt");
 
         auto p1 = part2(file);
-        cout << "Part1: " << p1 << '\n';
+        cout << "Part 2: " << p1 << '\n';
     }
     catch (std::exception &e)
     {
