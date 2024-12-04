@@ -89,12 +89,6 @@ int part1(std::istream &in)
             //check horiz up-left
             if(arr[i][j] == 'X' && j>=3 && i>=3)
             {
-            if(i == 9 && j == 3)
-            {
-                cout << "arr[i-1][j-1]: " << arr[i-1][j-1] << endl;
-                cout << "arr[i-2][j-2]: " << arr[i-2][j-2] << endl;
-                cout << "arr[i-3][j-3]: " << arr[i-3][j-3] << endl;
-            }
             if(arr[i-1][j-1] == 'M' && arr[i-2][j-2] == 'A' && arr[i-3][j-3] == 'S')
             {
                 cout << "found horiz up-left at: " << i << " " << j << endl;
