@@ -34,11 +34,9 @@ int part1(std::istream &in)
         //in format ##,##,##,##,...
         //make a vector of the numbers
         vector<int> order;
-        unordered_set<int> seen;
         for(int i = 0; i < line.length(); i+=3)
         {
             order.push_back(stoi(line.substr(i, 2)));
-            seen.insert(stoi(line.substr(i, 2)));
         }
         vector<int> preSort = order;
         //use custom less than to sort
@@ -46,7 +44,6 @@ int part1(std::istream &in)
         //sum += middle element
         if(preSort == order)
         {
-            cout << "sum += " << order[order.size()/2] << endl;
             sum += order[order.size()/2];
         }
     }
@@ -73,11 +70,9 @@ int part2(std::istream &in)
         //in format ##,##,##,##,...
         //make a vector of the numbers
         vector<int> order;
-        unordered_set<int> seen;
         for(int i = 0; i < line.length(); i+=3)
         {
             order.push_back(stoi(line.substr(i, 2)));
-            seen.insert(stoi(line.substr(i, 2)));
         }
         vector<int> preSort = order;
         //use custom less than to sort
@@ -85,7 +80,6 @@ int part2(std::istream &in)
         //sum += middle element
         if(preSort != order)
         {
-            cout << "sum += " << order[order.size()/2] << endl;
             sum += order[order.size()/2];
         }
     }
