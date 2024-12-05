@@ -62,7 +62,6 @@ int part1(std::istream &in)
                 throw std::invalid_argument("Not a )");
             }
             //everything was good! mult the numbs and add to sum
-            cout << "Num1: " << num1 << " Num2: " << num2 << '\n';
             sum += stoi(num1) * stoi(num2);
         }
         catch (std::exception &e)
@@ -151,7 +150,6 @@ int part2(std::istream &in)
                 throw std::invalid_argument("Not a )");
             }
             //everything was good! mult the numbs and add to sum
-            cout << "Num1: " << num1 << " Num2: " << num2 << '\n';
             sum += stoi(num1) * stoi(num2);
         }
         catch (std::exception &e)
