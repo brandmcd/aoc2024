@@ -20,6 +20,36 @@ TEST(part1)
     }
 }
 
+TEST(part1_example)
+{
+    try
+    {
+        ifstream file("example_input.txt");
+
+        auto p1 = part1(file);
+        cout << "Part1: " << p1 << '\n';
+    }
+    catch (std::exception &e)
+    {
+        cout << e.what();
+    }
+}
+
+TEST(part2_example)
+{
+    try
+    {
+        ifstream file("example_input.txt");
+
+        auto p1 = part2(file);
+        cout << "Part2: " << p1 << '\n';
+    }
+    catch (std::exception &e)
+    {
+        cout << e.what();
+    }
+}
+
 TEST(part2)
 {
     try
@@ -35,10 +65,4 @@ TEST(part2)
     }
 }
 
-TEST(example)
-{
-    istringstream in("");
-    ASSERT_EQUAL(part1(in), 0);
-    //ASSERT_EQUAL(part2(in), 0);
-}
 TEST_MAIN();
