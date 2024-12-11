@@ -10,8 +10,8 @@
 #include <sstream>
 #include <algorithm>
 
-long long part1(std::istream& in);
+int part1(std::istream& in);
 
-long long part2(std::istream& in);
+int part2(std::istream& in);
 
 #endif // DAYXX_HPP

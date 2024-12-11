@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int part1(std::istream &in)
+long long part1(std::istream &in)
 {
     // parse input
     string line;
@@ -13,7 +13,7 @@ int part1(std::istream &in)
     return -1;
 }
 
-int part2(std::istream &in)
+long long part2(std::istream &in)
 {
     // parse input
     string line;
