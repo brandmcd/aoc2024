@@ -54,6 +54,7 @@
         "unordered_set": "cpp",
         "chrono": "cpp",
         "set": "cpp",
-        "ratio": "cpp"
+        "ratio": "cpp",
+        "list": "cpp"
     }
 }
