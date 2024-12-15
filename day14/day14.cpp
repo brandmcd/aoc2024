@@ -205,6 +205,5 @@ long long part2(std::istream &in)
 
     printGrid(robots);
 
-    //get the safety scores 
     return time;
 }
