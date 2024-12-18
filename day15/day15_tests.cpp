@@ -37,17 +37,11 @@ TEST(part1_example)
 
 TEST(part2_example)
 {
-    try
-    {
+   
         ifstream file("example_input.txt");
 
         auto p1 = part2(file);
         cout << "Part2: " << p1 << '\n';
-    }
-    catch (std::exception &e)
-    {
-        cout << e.what();
-    }
 }
 
 TEST(part2)
